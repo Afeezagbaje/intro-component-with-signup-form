@@ -1,0 +1,102 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 375px;
+    margin: 70px auto;
+    padding: 1rem;
+}
+
+#sign-heading {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.sign-text{
+    margin-bottom: 50px;
+}
+
+#try {
+    font-weight: 700;
+}
+
+#trial, #claim {
+    margin: auto;
+    padding: 15px 0;
+}
+
+#trial {
+    border: 2px solid hsl(248, 32%, 49%);
+    background-color: hsl(248, 32%, 49%);
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.trial-form {
+    background-color: white;
+    color: hsl(249, 10%, 26%);
+    margin-top: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.trial-inside {
+    width: 300px;
+    margin: auto;
+}
+
+.input-box {
+    padding-top: 1.5rem;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+#claim {
+    border: 2px solid hsl(154, 59%, 51%);
+    background-color: hsl(154, 59%, 51%);
+    /* margin: auto; */
+    color: white;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px hsla(154, 59%, 51%, 0.7);
+    text-transform: uppercase;
+}
+
+.terms {
+    font-size: 0.7rem;
+    color: hsl(246, 25%, 77%);
+    padding-bottom: 30px;
+}
+
+#red {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
