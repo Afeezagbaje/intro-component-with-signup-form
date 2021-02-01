@@ -34,21 +34,33 @@
           </p> 
         </div>
       </div>
-      <div id="trial">
+      <button id="trial">
         <span id="try">Try it free 7 days</span> then 
         <br> $20/mo. thereafter
-      </div>
+      </button>
       <div class="trial-form">
         <div class="trial-inside">
-          <div class="input-box">
-            <input type="text" name="first-name" id="first-name" placeholder="   First Name">  
-            <input type="text" name="last-name" id="last-name" placeholder="   Last Name">  
-            <input type="email" name="email-address" id="email-address" placeholder="   Email Address"> 
-            <input type="password" name="password" id="password" placeholder="   Password"> 
-          </div>
-          <div id="claim">
-            Claim your free trial 
-          </div>
+          <form action="#" method="#" class="input-box" name="input-box" onsubmit="return validate();">
+            <div class="input-con"> 
+              <input type="text" name="First Name" id="first-name" placeholder="   First Name"> 
+              <p class="warn"> </p>
+            </div>  
+            <div class="input-con"> 
+              <input type="text" name="Last Name" id="last-name" placeholder="   Last Name">  
+              <p class="warn"></p>
+            </div>
+            <div class="input-con"> 
+              <input type="email" name="Email" id="email-address" placeholder="   Email Address"> 
+              <p class="warn"></p>
+            </div> 
+            <div class="input-con"> 
+              <input type="password" name="Password" id="password" placeholder="   Password">  
+              <p class="warn"></p>
+            </div>
+            <button type="submit" id="claim">
+              Claim your free trial 
+            </button>
+          </form>
           <div class="terms">
             <p>By clicking the button, you are agreeing to <br> our <span id="red">Terms and Services</span> </p>
           </div>

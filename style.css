@@ -46,9 +46,13 @@ body {
 #trial {
     border: 2px solid hsl(248, 32%, 49%);
     background-color: hsl(248, 32%, 49%);
+    color: white;
     width: 350px;
-    border-radius: 10px;
+    font-weight: 300;
+    line-height: 1.7;
+    border-radius: 7px;
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    outline: none;
 }
 
 .trial-form {
@@ -77,17 +81,18 @@ input {
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
     font-weight: 700;
+    outline: none;
 }
 
 #claim {
     border: 2px solid hsl(154, 59%, 51%);
     background-color: hsl(154, 59%, 51%);
-    /* margin: auto; */
     color: white;
     width: 300px;
     border-radius: 5px;
     box-shadow: 0 5px hsla(154, 59%, 51%, 0.7);
     text-transform: uppercase;
+    outline: none;
 }
 
 .terms {
@@ -99,4 +104,21 @@ input {
 #red {
     color: hsl(0, 100%, 74%);
     font-weight: 600;
+}
+
+.warn{
+    font-size: 0.8rem;
+    line-height: 1;
+    color: hsl(0, 100%, 74%);
+    margin-top: -15px;
+    text-align: right;
+    font-weight: 600;
+    display: block;
+}
+
+input:required:invalid {
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    border: 2px solid hsl(0, 100%, 74%);
 }
