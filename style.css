@@ -122,3 +122,21 @@ input:required:invalid {
     background-position: 95%;
     border: 2px solid hsl(0, 100%, 74%);
 }
+
+input:required:valid + .warn{
+    display: none;
+}
+
+input:active + .warn{
+    display: none;
+}
+
+
+@media (min-width:400px){
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    .container{
+        display: flex;
+    }
+}
