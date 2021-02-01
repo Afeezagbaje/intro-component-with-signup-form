@@ -58,19 +58,16 @@ body {
 .trial-form {
     background-color: white;
     color: hsl(249, 10%, 26%);
-    margin-top: 20px;
+    margin: 20px auto 0;
     width: 350px;
     border-radius: 10px;
     box-shadow: 0 7px rgba(0, 0, 0, 0.1);
 }
 
-.trial-inside {
-    width: 300px;
-    margin: auto;
-}
 
 .input-box {
     padding-top: 1.5rem;
+    width: 350px;
 }
 
 input {
@@ -99,6 +96,7 @@ input {
     font-size: 0.7rem;
     color: hsl(246, 25%, 77%);
     padding-bottom: 30px;
+    text-align: center;
 }
 
 #red {
@@ -132,11 +130,44 @@ input:active + .warn{
 }
 
 
-@media (min-width:400px){
+@media (min-width:600px){
     body{
         background-image: url(images/bg-intro-desktop.png);
     }
     .container{
         display: flex;
+        width: 80%;
+    }
+    .sign-text{
+        margin-left: -20px;
+    }
+    .sign-part{
+        justify-content: center;
+        align-content: center;
+        margin-left: 50px;
+    }
+    #sign-heading {
+        font-size: 3rem;
+        width: 500px;
+        margin-top: 100px;
+        text-align: left;
+    }
+    #sign-body{
+        text-align: left;
+    }
+    .trial-form,#trial{
+        width: 500px;
+    }
+    input{
+        width: 450px;  
+        margin-left: 22.5px;
+    }
+    #claim{
+        width: 450px;
+        margin-left: 22.5px;
+    }
+    .warn{
+        text-align: right;
+        margin-right: -122px;
     }
 }

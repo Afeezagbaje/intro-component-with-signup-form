@@ -13,8 +13,7 @@ function validate() {
             return false;   
         } 
     };
-    if(email.value.includes("@") == false || email.value.includes(".com") == false){
-        // email.setAttribute("placeholder", "email@example/com")
+    if(email.value.includes("@") == false || email.value.includes(".") == false){
         emailBox(email)
         return false;   
     }
@@ -29,16 +28,6 @@ function changeBox (a){
 function emailBox(a){
     email.setAttribute("placeholder", "email@example/com")
     a.nextElementSibling.textContent = " Looks like this is not an email";
-    // place.style.color = 'hsl(0, 100%, 74%)';
     a.setAttribute("required", "");
     a.focus();
 }
-
-
-    // if(email.value.includes("@") == false || email.value.includes(".com") == false){
-    //     email.nextElementSibling.textContent = 'Looks like this is not an email';
-    //     email.setAttribute("required", "");
-    //     email.setAttribute("placeholder", "email@example/com").style.color = 'hsl(0, 100%, 74%)';
-    //     email.focus();
-    //     return false;   
-    // }
