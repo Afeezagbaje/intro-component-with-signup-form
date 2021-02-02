@@ -97,6 +97,8 @@ input {
     color: hsl(246, 25%, 77%);
     padding-bottom: 30px;
     text-align: center;
+    width: 280px;
+    margin: 0 auto;
 }
 
 #red {
@@ -109,11 +111,19 @@ input {
     line-height: 1;
     color: hsl(0, 100%, 74%);
     margin-top: -15px;
+    margin-right: 23px;
     text-align: right;
     font-weight: 600;
     display: block;
 }
 
+
+/* this works for only when the input has a placeholder of email@example/com */
+input[placeholder='email@example/com']::placeholder{
+    color: hsl(0, 100%, 74%);
+}
+
+/* this works only when the text field is left blank */
 input:required:invalid {
     background-image: url(images/icon-error.svg);
     background-repeat: no-repeat;
@@ -121,10 +131,12 @@ input:required:invalid {
     border: 2px solid hsl(0, 100%, 74%);
 }
 
+/* this helps remove the warning when the field is no longer empty */
 input:required:valid + .warn{
     display: none;
 }
 
+/* this help remove the warning when the client clicks on the input field */
 input:active + .warn{
     display: none;
 }
@@ -169,5 +181,9 @@ input:active + .warn{
     .warn{
         text-align: right;
         margin-right: -122px;
+    }
+    .terms{
+        width: 400px;
+        margin: 0 auto;
     }
 }
